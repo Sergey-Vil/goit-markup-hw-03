@@ -4,125 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
+    <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="conteiner">
-        <nav class="site-nav none">
+    <header class="page-header">
+      <div class="conteiner header">
+        <nav class="site-nav">
           <a lang="en" href="./index.html" class="logo"
             >Web <span class="title-primery">Studio</span></a
           >
           <ul class="list">
-            <li>
-              <a href="./index.html" class="link current">Студія</a>
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="link">Портфоліо</a>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
             </li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <ul class="list contacts">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <section>
+      <section class="galary">
         <div class="conteiner">
-          <h1 class="galary-title">Галерея сайтів</h1>
-          <ul class="list">
-            <li><button type="button" class="btn">Усі</button></li>
-            <li><button type="button" class="btn">Веб-сайти</button></li>
-            <li><button type="button" class="btn">Додатки</button></li>
-            <li><button type="button" class="btn">Дизайн</button></li>
-            <li><button type="button" class="btn">Маркетинг</button></li>
+          <h1 class="galary title">Галерея сайтів</h1>
+          <ul class="list-btn">
+            <li class="item"><button type="button" class="btn general">Усі</button></li>
+            <li class="item"><button type="button" class="btn">Веб-сайти</button></li>
+            <li class="item"><button type="button" class="btn">Додатки</button></li>
+            <li class="item"><button type="button" class="btn">Дизайн</button></li>
+            <li class="item"><button type="button" class="btn">Маркетинг</button></li>
           </ul>
-          <ul class="lists list">
-            <li>
-              <img
-                src="./images/tehnokriak.jpg"
-                alt="Сторінка сайту з портретами"
-                width="370"
-                height="294"
-              />
-
-              <h2 class="lists-title">Технокряк</h2>
-              <p class="text">Веб-сайт</p>
+          <ul class="list-galary">
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/tehnokriak.jpg"
+                  alt="Веб-сайт Технокряк"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img
-                src="./images/basketball.jpg"
-                alt="Два гравці грають в баскетбол"
-                width="370"
-                height="294"
-              />
-              <h2 class="lists-title">Постер New Orlean vs Golden Star</h2>
-              <p class="text">Дизайн</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/basketball.jpg"
+                  alt="Два гравці грають в баскетбол"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370" height="294" />
-              <h2 class="lists-title">Ресторан Seafood</h2>
-              <p class="text">Додаток</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294" />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Ресторан Seafood</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img src="./images/headphones.jpg" alt="Навушники" width="370" height="294" />
-              <h2 class="lists-title">Проєкт Prime</h2>
-              <p class="text">Маркетинг</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./images/headphones.jpg" alt="Навушники" width="370" height="294" />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Проєкт Prime</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img src="./images/boxes.jpg" alt="Дві коробочки" width="370" height="294" />
-              <h2 class="lists-title">Проєкт Boxes</h2>
-              <p class="text">Додаток</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./images/boxes.jpg" alt="Дві коробочки" width="370" height="294" />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Проєкт Boxes</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img
-                src="./images/inspiration.jpg"
-                alt="На єкрані монітору стартова сторінка додатку"
-                width="370"
-                height="294"
-              />
-              <h2 class="lists-title">Inspiration has no Borders</h2>
-              <p class="text">Веб-сайт</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/inspiration.jpg"
+                  alt="Cторінка додатку Inspiration has no Borders"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Inspiration has no Borders</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img
-                src="./images/limited-edition.jpg"
-                alt="Відкритий примірник журналу Limited Edition"
-                width="370"
-                height="294"
-              />
-              <h2 class="lists-title">Видання Limited Edition</h2>
-              <p class="text">Дизайн</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/limited-edition.jpg"
+                  alt="Відкритий примірник журналу Limited Edition"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Видання Limited Edition</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img
-                src="./images/lab.jpg"
-                alt="Фірмова бирка-ярлик LAB EL TAG"
-                width="370"
-                height="294"
-              />
-              <h2 class="lists-title">Проєкт LAB</h2>
-              <p class="text">Маркетинг</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/lab.jpg"
+                  alt="Фірмова бирка-ярлик LAB EL TAG"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Проєкт LAB</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li>
-              <img
-                src="./images/growing-business.jpg"
-                alt="На єкрані монітору стартова сторінка додатку"
-                width="370"
-                height="294"
-              />
-              <h2 class="lists-title">Growing Business</h2>
-              <p class="text">Додаток</p>
+            <li class="item">
+              <a class="galary-link" href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./images/growing-business.jpg"
+                  alt="Cторінка додатку Growing Business"
+                  width="370"
+                  height="294"
+                />
+                <div class="galary-desc">
+                  <h2 class="galary-title">Growing Business</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -134,8 +175,8 @@
           >Web <span class="title-secondary">Studio</span></a
         >
         <address class="address">
-          <ul class="list">
-            <li>
+          <ul class="address-list">
+            <li class="item">
               <a
                 href="https://www.google.com.ua/maps/@50.3929785,30.3235373,19z?hl=ru"
                 class="link-map"
@@ -144,8 +185,10 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            </li>
+            <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
