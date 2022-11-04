@@ -146,6 +146,9 @@ ul {
 }
 
 /* main */
+.section {
+  padding: 94px 0;
+}
 
 /* main hero */
 
@@ -177,25 +180,20 @@ ul {
   border-color: transparent;
   border-radius: 4px;
 }
-.btn {
+.btn.hero {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--c-primery);
-  background-color: var(--background-color-btn);
-  cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
   color: var(--white-color);
   background-color: var(--bg-accent);
+  cursor: pointer;
 }
 
 /* main features */
 
-.features .conteiner {
-  padding-top: 94px;
+.features.section {
+  padding-bottom: 0;
 }
 .features .title {
   display: none;
@@ -218,7 +216,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
-
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 .features p {
@@ -230,12 +228,6 @@ ul {
 
 /* main works*/
 
-.works .conteiner,
-.team .conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .works .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -245,11 +237,9 @@ ul {
 .team {
   background-color: var(--bg-team);
 }
-.team .conteiner {
-  padding-bottom: 94px;
-}
+
 .team .item {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   background: var(--bg-section);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,20 +248,21 @@ ul {
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
+.team-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 .team .subject {
-  margin-top: 30px;
   margin-bottom: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 .team p {
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
-  text-align: center;
 }
 
 /* footer */
@@ -314,13 +305,30 @@ ul {
 .galary.title {
   display: none;
 }
-.galary .btn {
+
+.list-btn .item:not(:last-child) {
+  margin-right: 8px;
   margin-bottom: 50px;
 }
-.list-btn {
-  display: flex;
-  gap: 8px;
+
+.btn.filter {
+  display: block;
+  /* margin-right: 8px; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--c-primery);
+  background-color: var(--bg-team);
+  cursor: pointer;
 }
+
+.btn.filter:hover,
+.btn.filter:focus {
+  color: var(--white-color);
+  background-color: var(--bg-accent);
+}
+
 .list-btn .btn {
   padding: 6px 22px;
   border-color: transparent;
